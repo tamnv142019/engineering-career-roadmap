@@ -38,9 +38,8 @@ export default function EngineeringCareerRoadmap() {
     <div className="w-full min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center">
       <div className="w-screen max-w-full max-h-screen overflow-auto px-6 py-6">
         {/* Header */}
-        <div className="text-center mb-8">
-          <div className="flex justify-between items-center mb-4">
-          
+        <div className="mb-8">
+          <div className="flex justify-end mb-6">
             <button
               onClick={() => setLanguage(language === 'en' ? 'vi' : 'en')}
               className="flex items-center gap-2 bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-lg transition-all"
@@ -48,14 +47,15 @@ export default function EngineeringCareerRoadmap() {
               <Globe className="w-5 h-5" />
               {language === 'en' ? 'VI- Tiếng Việt' : 'EN-English'}
             </button>
-              <div></div>
           </div>
-          <h1 className="text-5xl font-bold text-white mb-3">
-            {i18n.title}
-          </h1>
-          <p className="text-slate-300 text-lg">
-            {i18n.subtitle}
-          </p>
+          <div className="text-center">
+            <h1 className="text-5xl font-bold text-white mb-3">
+              {i18n.labels.title}
+            </h1>
+            <p className="text-slate-300 text-lg">
+              {i18n.labels.subtitle}
+            </p>
+          </div>
         </div>
 
         {/* Tabs */}
